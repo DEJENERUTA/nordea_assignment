@@ -1,4 +1,3 @@
-import React from "react";
 import { useId } from "react";
 const FormGroup = ({ name, state, setState }) => {
   const side = useId();

@@ -1,9 +1,9 @@
 //Given a triangle, find out if it is scalene, equilateral, isosceles or neither.
 //Language: reactjs
 //Path: nordea-test/src/components/Triangle.js
-import React, { useState } from "react";
+import { useState } from "react";
 import FormGroup from "./FormGroup";
-const Test = () => {
+const Triangle = () => {
   const [side1, setSide1] = useState(0);
   const [side2, setSide2] = useState(0);
   const [side3, setSide3] = useState(0);
@@ -41,4 +41,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Triangle;
