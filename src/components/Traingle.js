@@ -5,6 +5,8 @@ import { useState } from "react";
 import FormGroup from "./FormGroup";
 
 const Triangle = () => {
+  //move the 4 useState calls into a custom hook
+
   const [side1, setSide1] = useState(0);
   const [side2, setSide2] = useState(0);
   const [side3, setSide3] = useState(0);

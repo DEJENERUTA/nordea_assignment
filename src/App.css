@@ -24,18 +24,6 @@
   border-radius: 5px;
   margin-top: 20px;
 }
-
-label {
-  padding: 10px;
-  margin: 10p;
-  font-size: 24px;
-}
-input {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 1px solid #b34151;
-}
 .btn {
   border-radius: 5px;
   border: 0;
@@ -53,4 +41,31 @@ input {
 .btn:hover {
   background: #fff;
   color: #b34151;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  padding: 10px;
+  margin: 10p;
+  font-size: 24px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #b34151;
+}
+
+.form-control {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #41b3a3;
+  margin-bottom: 10px;
 }
