@@ -1,11 +1,44 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 .title {
   font-size: 1.5em;
+  background-color: #b34151;
+  width: 450px;
+  margin: auto;
+  color: #fff;
+}
+.container {
+  width: 450px;
+  margin: 0 auto;
+  background-color: #41b3a3;
+  color: #fff;
 }
 
 label {
+  padding: 10px;
+  margin: 10p;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+}
+.btn {
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height: 25px;
+  font-family: Tahoma;
+  background: #b34151;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/* label {
   color: #b4886b;
   font-weight: bold;
   display: block;
@@ -91,3 +124,4 @@ input {
 .success {
   margin: 0 auto;
 }
+ */

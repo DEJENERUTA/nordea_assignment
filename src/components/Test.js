@@ -2,6 +2,7 @@
 //Language: reactjs
 //Path: nordea-test/src/components/Triangle.js
 import React, { useState } from "react";
+import FormGroup from "./FormGroup";
 const Test = () => {
   const [side1, setSide1] = useState(0);
   const [side2, setSide2] = useState(0);
@@ -28,36 +29,9 @@ const Test = () => {
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="side1">Side 1</label>
-          <input
-            type="number"
-            className="form-control"
-            id="side1"
-            value={side1}
-            onChange={(e) => setSide1(e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="side2">Side 2</label>
-          <input
-            type="number"
-            className="form-control"
-            id="side2"
-            value={side2}
-            onChange={(e) => setSide2(e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="side3">Side 3</label>
-          <input
-            type="number"
-            className="form-control"
-            id="side3"
-            value={side3}
-            onChange={(e) => setSide3(e.target.value)}
-          />
-        </div>
+        <FormGroup name="side1" state={side1} setState={setSide1} />
+        <FormGroup name="side2" state={side2} setState={setSide2} />
+        <FormGroup name="side3" state={side3} setState={setSide3} />
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
