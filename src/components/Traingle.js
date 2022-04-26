@@ -17,25 +17,20 @@ const Triangle = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!side1 || !side2 || !side3) {
+      //if any of the sides are not filled out
       setResult("Not a triangle");
-      // if (
-      //   side1 + side2 <= side3 ||
-      //   side1 + side3 <= side2 ||
-      //   side2 + side3 <= side1
-      // ) {
-      //   setResult("Not a triangle");
     } else if (side1 === side2 && side2 === side3) {
-      setResult("Equilateral"); // a triangle with all three sides of equal length
+      setResult("Equilateral"); // a triangle with all three sides of equal length (x=y=z)
     } else if (side1 === side2 || side2 === side3 || side1 === side3) {
-      setResult("Isosceles"); //a triange that has both two equal sides and two equal angles
+      setResult("Isosceles"); //a triange that has both two equal sides and two equal angles(x=y or x=z or y=z)
     } else {
-      setResult("Scalene"); // a triange that has 3 unequal sides.
+      setResult("Scalene"); // a triange that has 3 unequal sides.(no two sides are equal)
     }
   };
   const triangleStyle = {
     borderLeft: `${side1}px solid transparent`,
     borderRight: `${side2}px solid transparent`,
-    borderTop: `${side3}px solid #65cbed`,
+    borderBottom: `${side3}px solid #65cbed`,
   };
 
   return (
