@@ -1,16 +1,17 @@
-.traingle-heading {
+.triangles {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #65cbed;
+  top: 50%;
+  right: 25px;
+  position: absolute;
+  transition: 1s;
 }
 .container {
   width: 680px;
   height: 400px;
   margin: 0 auto;
-  background-color: #00019f;
-  color: #ffffff;
+  background-color: #f4f2f1;
+  color: #00005e;
   font-weight: 700;
   font-family: Helvetica, sans-serif;
   padding: 10px;
@@ -24,7 +25,7 @@
   width: 80px;
   height: 25px;
   font-family: Helvetica, sans-serif;
-  background-color: #a6d1ff;
+  background-color: #00019f;
   padding: 15px;
   color: #fff;
   display: flex;
@@ -33,6 +34,6 @@
   margin: 0 auto;
 }
 .btn:hover {
-  background-color: #dcedff;
+  background-color: #a6d1ff;
   color: #00019f;
 }

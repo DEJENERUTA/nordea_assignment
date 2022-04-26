@@ -33,14 +33,9 @@ const Triangle = () => {
     }
   };
   const triangleStyle = {
-    width: 0,
-    height: 0,
-    top: "50%",
-    right: "25px",
     borderLeft: `${side1}px solid transparent`,
     borderRight: `${side2}px solid transparent`,
     borderTop: `${side3}px solid #65cbed`,
-    position: "absolute",
   };
 
   return (
@@ -54,7 +49,7 @@ const Triangle = () => {
         </button>
       </form>
       <div>{result}</div>
-      <div style={triangleStyle}></div>
+      <div className="triangles" style={triangleStyle}></div>
     </div>
   );
 };
