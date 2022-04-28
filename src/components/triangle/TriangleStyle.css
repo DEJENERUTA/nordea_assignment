@@ -1,6 +1,6 @@
 .container {
   width: 680px;
-  height: 400px;
+  height: 580px;
   margin: 0 auto;
   background-color: #f4f2f1;
   color: #00005e;
@@ -12,10 +12,10 @@
   position: relative;
 }
 .trianglesImg {
-  max-width: 150px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 100%;
+  margin-top: 20px;
+  top: 20px;
+  right: 50px;
 }
 .btn {
   border-radius: 5px;
