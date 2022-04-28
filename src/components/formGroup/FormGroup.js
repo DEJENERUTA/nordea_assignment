@@ -1,22 +1,11 @@
 import { useId } from "react";
-
+import "./FormGroup.css";
 const FormGroup = ({ name, state, setState }) => {
   const side = useId();
 
   return (
     <div className="form-group">
-      {/* <div>
-        {name}
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={state}
-          onChange={(e) => setState(e.target.value)}
-          className="slider"
-          id={side}
-        />
-      </div> */}
+      {/* <img src={TriangleImage} alt={name} /> */}
       <label htmlFor={side}>{name}</label>
       <input
         type="range"
@@ -27,6 +16,7 @@ const FormGroup = ({ name, state, setState }) => {
         value={state}
         onChange={(e) => setState(Number(e.target.value))}
       />
+      <span>{state}</span>
     </div>
   );
 };

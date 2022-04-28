@@ -1,4 +1,4 @@
-import Traingle from "./components/Traingle";
+import Traingle from "./components/triangle/Triangle";
 import "./App.css";
 
 function App() {

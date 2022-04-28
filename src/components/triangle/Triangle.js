@@ -2,16 +2,16 @@
 //Language: reactjs
 
 import { useState } from "react";
-import FormGroup from "./FormGroup";
+import FormGroup from "../formGroup/FormGroup";
+import equilateral from "../../assets/equilateral.png";
+import isosceles from "../../assets/isosceles.png";
+import scalene from "../../assets/scalene.png";
 import "./TriangleStyle.css";
-import "./FormGroup.css";
 
 const Triangle = () => {
-  //move the 4 useState calls into a custom hook
-
-  const [side1, setSide1] = useState(false);
-  const [side2, setSide2] = useState(false);
-  const [side3, setSide3] = useState(false);
+  const [side1, setSide1] = useState(0);
+  const [side2, setSide2] = useState(0);
+  const [side3, setSide3] = useState(0);
   const [result, setResult] = useState("");
 
   const handleSubmit = (e) => {
@@ -27,11 +27,6 @@ const Triangle = () => {
       setResult("Scalene"); // a triange that has 3 unequal sides.(no two sides are equal)
     }
   };
-  const triangleStyle = {
-    borderLeft: `${side1}px solid transparent`,
-    borderRight: `${side2}px solid transparent`,
-    borderBottom: `${side3}px solid #65cbed`,
-  };
 
   return (
     <div className="container">
@@ -43,8 +38,17 @@ const Triangle = () => {
           Submit
         </button>
       </form>
-      <div>{result}</div>
-      <div className="triangles" style={triangleStyle}></div>
+      <div className="state">{result}</div>
+
+      <div className="trianglesImg">
+        {result === "Equilateral" ? (
+          <img src={equilateral} alt="equilateral" className="triangle" />
+        ) : result === "Isosceles" ? (
+          <img src={isosceles} alt="isosceles" className="triangle" />
+        ) : result === "Scalene" ? (
+          <img src={scalene} alt="scalene" className="triangle" />
+        ) : null}
+      </div>
     </div>
   );
 };
