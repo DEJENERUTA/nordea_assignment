@@ -47,7 +47,8 @@
   gap: 0;
 }
 .icon-btn-container {
-  max-width: 350px;
+  max-width: 450px;
+  gap: 10px;
   display: flex;
   flex-direction: row-reverse;
   margin: 0 auto;

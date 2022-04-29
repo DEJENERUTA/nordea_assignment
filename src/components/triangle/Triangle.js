@@ -39,13 +39,37 @@ const Triangle = () => {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-          <BtnIcon>
+          <BtnIcon
+            fun={() => {
+              setSide1(90);
+              setSide2(90);
+              setSide3(90);
+              setResult("Scalene");
+              console.log("Scalene");
+            }}
+          >
             <ScaleneIcon />
           </BtnIcon>
-          <BtnIcon>
+          <BtnIcon
+            fun={() => {
+              setSide1(90);
+              setSide2(90);
+              setSide3(50);
+              setResult("Isosceles");
+              console.log("Isosceles");
+            }}
+          >
             <IsocelesIcon />
           </BtnIcon>
-          <BtnIcon>
+          <BtnIcon
+            fun={() => {
+              setSide1(50);
+              setSide2(70);
+              setSide3(90);
+              setResult("Equilateral");
+              console.log("Equilateral");
+            }}
+          >
             <EquilateralIcon />
           </BtnIcon>
         </aside>
