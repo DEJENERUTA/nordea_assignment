@@ -1,5 +1,6 @@
 .container {
-  width: 680px;
+  max-width: 680px;
+  width: 100%;
   height: 580px;
   margin: 0 auto;
   background-color: #f4f2f1;
@@ -10,12 +11,6 @@
   border-radius: 5px;
   margin-top: 20px;
   position: relative;
-}
-.trianglesImg {
-  width: 100%;
-  margin-top: 20px;
-  top: 20px;
-  right: 50px;
 }
 .btn {
   border-radius: 5px;
@@ -37,7 +32,23 @@
   background-color: #a6d1ff;
   color: #00019f;
 }
-
-.state {
+.triangles-type {
   margin-top: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #00005e;
+}
+.trianglesImg {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.btn-overrider {
+  background: transparent;
+  gap: 0;
+}
+.icon-btn-container {
+  max-width: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
 }

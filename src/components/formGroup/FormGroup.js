@@ -5,7 +5,6 @@ const FormGroup = ({ name, state, setState }) => {
 
   return (
     <div className="form-group">
-      {/* <img src={TriangleImage} alt={name} /> */}
       <label htmlFor={side}>{name}</label>
       <input
         type="range"
