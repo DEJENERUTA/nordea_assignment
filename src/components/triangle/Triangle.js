@@ -1,7 +1,7 @@
 //Given a triangle, find out if it is scalene, equilateral, isosceles or neither.
 //Language: reactjs
 
-import { useState } from "react";
+import { useState } from "react"; // this useState will perform the function when the component is rendered and when the component is updated (when the state changes)
 import FormGroup from "../formGroup/FormGroup";
 import equilateral from "../../assets/equilateral.png";
 import isosceles from "../../assets/isosceles.png";
@@ -11,7 +11,7 @@ import BtnIcon from "../BtnIcon";
 import "./TriangleStyle.css";
 
 const Triangle = () => {
-  const [side1, setSide1] = useState(0);
+  const [side1, setSide1] = useState(0); // this variable will be used to store the value of the first side of the triangle
   const [side2, setSide2] = useState(0);
   const [side3, setSide3] = useState(0);
   const [result, setResult] = useState("");
@@ -33,16 +33,18 @@ const Triangle = () => {
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
+        {" "}
+        // this form will be used to get the values of the sides of the triangle
         <FormGroup name="side1" state={side1} setState={setSide1} />
         <FormGroup name="side2" state={side2} setState={setSide2} />
         <FormGroup name="side3" state={side3} setState={setSide3} />
-
         <aside className="icon-btn-container">
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
           <BtnIcon
             fun={() => {
+              // this function will be used to reset the values of the sides of the triangle
               setSide1(90);
               setSide2(90);
               setSide3(90);
@@ -75,7 +77,9 @@ const Triangle = () => {
           </BtnIcon>
         </aside>
       </form>
-      <div className="triangles-type">{result}</div>
+      <div className="triangles-type">
+        {result} // this div will be used to display the result of the triangle
+      </div>
 
       <div className="trianglesImg">
         {result === "Equilateral" ? ( //if the result is equilateral then show the equilateral image
