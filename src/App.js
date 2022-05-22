@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">Triangle Tester</h1>
-      <Traingle />
+      <Traingle /> // this component will be used to display the triangle
     </div>
   );
 }
